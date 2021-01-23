@@ -4,10 +4,9 @@ const Movie = mongoose.model("Movie");
 
 module.exports.getAllMovies = function(req, res){
     var offset = 4;
-    var count = 3;
+    var count = 7;
 
     const maxCount = 10;
-    console.log("here============+++++")
     if(req.query && req.query.offset){
         offset = parseInt(req.query.offset, 10);
     }
