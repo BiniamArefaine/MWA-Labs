@@ -32,24 +32,11 @@ const qrSchema = new mongoose.Schema({
 
 })
 
-const userSchema = new mongoose.Schema({
-    email:{
-        type:String,
-        required:true,
-        unique:true
-    },
-    password:{
-        type:String,
-        required:true
-    }
-
-})
 const studentSchema = new mongoose.Schema({
     
     firstname:String,
     lastname: String,
     studentid:String,
-    user:userSchema,
     qr:qrSchema,
     attendance: [attendanceSchema]
    
