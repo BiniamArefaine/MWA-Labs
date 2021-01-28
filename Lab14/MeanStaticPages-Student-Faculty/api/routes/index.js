@@ -27,7 +27,6 @@ router.route("/attendance/faculty/login")
 router.route("/attendance/students/qrcode")
 .get(studentController.qrcode)
 
-//
 router.route("/attendance/students/get-all-students")
 .get(studentController.getAllStudents)
 
@@ -35,11 +34,10 @@ router.route("/attendance/students/:id")
 .put(studentController.update)
 .delete(studentController.deleteStudent)
 
-//
+
 router.route("/attendance/students/register")
 .post(studentController.registerStudent)
 
-//
 router.route("/attendance/students")
 .get(studentController.attendace)
 
@@ -47,15 +45,7 @@ router.route("/attendance/students")
 router.route("/attendance/faculty/qrcode-camera")
 .get(facultyController.qrCamera)
 
-// router.route("/attendance/faculty/attendance")
-// .get(facultyController.attendance)
-// router.route("/")
-// .get(studentController.homePage)
 
-// router.route("/attendance/students/loggedin")
-// .get(studentController.loggedInStudent)
-// router.route("/attendance/students/login")
-// .get(studentController.login)
 
 
 
